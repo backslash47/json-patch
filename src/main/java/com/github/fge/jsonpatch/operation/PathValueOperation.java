@@ -27,7 +27,6 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
 import com.github.fge.jackson.jsonpointer.JsonPointer;
 import com.github.fge.jsonpatch.JsonPatchMessages;
-import com.github.fge.jsonpatch.operation.JsonPatchOperation;
 import com.github.fge.msgsimple.bundle.MessageBundle;
 import com.github.fge.msgsimple.load.MessageBundles;
 
@@ -89,5 +88,17 @@ public abstract class PathValueOperation
     public final String toString()
     {
         return "op: " + op + "; path: \"" + path + "\"; value: " + value;
+    }
+
+    public String getOp() {
+        return op;
+    }
+
+    public JsonPointer getPath() {
+        return path;
+    }
+
+    public JsonNode getValue() {
+        return value;
     }
 }

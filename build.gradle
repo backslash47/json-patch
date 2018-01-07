@@ -24,8 +24,8 @@ apply(plugin: "osgi");
 apply(plugin: "idea");
 apply(plugin: "eclipse");
 
-group = "com.box";
-version = "1.12";
+group = "cz.inqool";
+version = "1.13";
 sourceCompatibility = "1.6";
 targetCompatibility = "1.6"; // defaults to sourceCompatibility
 

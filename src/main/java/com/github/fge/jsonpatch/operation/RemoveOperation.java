@@ -107,4 +107,12 @@ public final class RemoveOperation
     {
         return "op: " + op + "; path: \"" + path + '"';
     }
+
+    public String getOp() {
+        return op;
+    }
+
+    public JsonPointer getPath() {
+        return path;
+    }
 }

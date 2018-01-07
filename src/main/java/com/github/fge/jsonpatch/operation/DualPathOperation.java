@@ -88,4 +88,16 @@ public abstract class DualPathOperation
     {
         return "op: " + op + "; from: \"" + from + "\"; path: \"" + path + '"';
     }
+
+    public String getOp() {
+        return op;
+    }
+
+    public JsonPointer getFrom() {
+        return from;
+    }
+
+    public JsonPointer getPath() {
+        return path;
+    }
 }
